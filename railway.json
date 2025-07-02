@@ -7,7 +7,7 @@
   },
   "deploy": {
     "startCommand": "npm run preview",
-    "healthcheckPath": "/healthz",
+    "healthcheckPath": "/",
     "healthcheckTimeout": 10000
   },
   "project": {
