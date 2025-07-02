@@ -5,11 +5,11 @@
     },
     "command": "npm run build"
   },
-  "deploy": {
-    "startCommand": "npm run preview",
-    "healthcheckPath": "/healthz",
-    "healthcheckTimeout": 10000
-  },
+ "deploy": {
+  "startCommand": "npx serve -s dist -l 8080",
+  "healthcheckPath": "/healthz",
+  "healthcheckTimeout": 10000
+},
   "project": {
     "name": "fyp-frontend",
     "description": "Recipe Basket Frontend deployed on Railway"
