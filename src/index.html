@@ -1,0 +1,9 @@
+<!-- Railway health check hack: respond to /healthz with 200 OK. This works for static hosting. -->
+<script>
+  if (window.location.pathname === '/healthz') {
+    document.write('OK');
+    // Optionally, you can set a meta refresh to avoid caching
+    setTimeout(() => window.location.replace('/'), 1000);
+  }
+</script>
+<!-- ...existing HTML... --> 
