@@ -7,11 +7,11 @@
   },
   "deploy": {
     "startCommand": "npm run preview",
-    "healthcheckPath": "/",
+    "healthcheckPath": "/healthz",
     "healthcheckTimeout": 10000
   },
   "project": {
     "name": "fyp-frontend",
     "description": "Recipe Basket Frontend deployed on Railway"
   }
-} 
+}
